@@ -51,10 +51,14 @@
       let rate = document.getElementById("rate").value;
       let repayments = document.getElementById("repayments");
       let interestonly = document.getElementById("interestonly");
-
+      let n = term*12;
+      parseFloat(rate);
+        let r = rate/(12*100);
+        let m2= amount*(r*Math.pow((1+r),n))/(Math.pow((1+r),n)-1);
+       console.log(m2);
 
       if(repayments.checked){
-        console.log("repayments");
+
       } else if(interestonly.checked){
         console.log("interest");
       } else{
