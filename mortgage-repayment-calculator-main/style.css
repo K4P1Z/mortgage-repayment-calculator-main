@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-body{
+
+body {
     margin: 0;
     padding: 0;
     background-color: hsl(202, 86%, 94%);
@@ -7,9 +8,15 @@ body{
     justify-content: center;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
-.container{
+
+.container {
     display: flex;
     width: 50%;
     margin-top: 50vh;
+}
 
+#amount,
+#term,
+#rate {
+    width: 100%;
 }
