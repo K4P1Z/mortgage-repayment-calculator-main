@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   
   <title>Frontend Mentor | Mortgage repayment calculator</title>
 
@@ -16,34 +18,36 @@
   </style>
 </head>
 <body>
-<div class="container">
-  <div class="gora">
-  <label for="Mortgagea">Mortgage Amount
-    <input type="number" id="amount">
-  </label>
-  <label for="MortgageT">Mortgage Term
-    <input type="number" id="term">
-  </label>
-  <label for="InterestR">Interest Rate
-    <input type="number" id="rate">
-  </label>
+<main>
+  <div class="container">
+    <div class="left">
+      <div class="line1">
+        <h1>Mortgage calculator</h1>
+        <p class="clear">Clear all</p>
 
-  <label for="repayments">Repayments
-    <input type="radio" name="wybor" id="repayments">
-  </label>
-    <label for="interestonly">Interest only
-    <input type="radio" name="wybor" id="interestonly">
-  </label>
+      </div>
+      <div class="labelcontainer">
+      <label for="amount">Mortgage amount</label>
+      <div class="line2label">
+      <i class="fas fa-pound-sign icon, pound"></i>
+      <input type="number" class="pounds">
+    </div>
+    
+    <div class="labelscontainer">
+      <label for="term">Mortgage term</label>
+      <div class="line2labels">
+      <i class="years">years</i>
+      <input type="number" class="year">
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="right">
 
-  <button onclick="oblicz()">Oblicz rate</button>
-  <div id="result"></div>
-</div>
-  
+    </div>
 
-
-
-</div>
   </div>
+</main>
   <script>
     function oblicz(){
       let amount = document.getElementById("amount").value;

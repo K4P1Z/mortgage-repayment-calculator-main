@@ -6,15 +6,90 @@ body {
     background-color: hsl(202, 86%, 94%);
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .container {
     display: flex;
-    width: 50%;
-    margin-top: 50vh;
-}
+    width: 100%;
+    border: 1px solid black;
 
+}
+.left, .right{
+    width: 100%;
+    padding: 20px;
+    display: block;
+}
+.line1{
+    display: flex;
+    margin-bottom: 25px;
+}
+.line1 h1{
+    font-size: 20px;
+    white-space: nowrap;
+    float: left;
+    margin-right: 100px;
+}
+.line1 .clear{
+    float: right;
+    color: #7A8C8D;
+    text-decoration: none;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+.left{
+    background-color: hsl(0, 0%, 100%);
+}
+.right{
+    background-color: hsl(202, 40%, 25%);
+}
+.labelcontainer{
+    display: block;
+}
+.line2label{
+    margin-top: 15px;
+
+}
+.labelcontainer input{
+    padding: 7px;
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 15px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.pound{
+
+    position: absolute;
+    background-color: hsl(203, 41%, 72%);
+    padding: 8px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    border: 1px solid black;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+}
+.years{
+    position: absolute;
+    background-color: hsl(203, 41%, 72%);
+    padding: 8px;
+    margin-bottom: 1px;
+    margin-left: 70px;
+    border: 1px solid black;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px; 
+}
+.labelscontainer input{
+    padding: 7px;
+    width: 40%;
+    margin-right: 5%;
+    padding-left: 15px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
 #amount,
 #term,
 #rate {

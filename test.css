@@ -1,0 +1,119 @@
+body{
+font-family: Arial, sans-serif;
+background-color: #E6F2F5;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.container {
+display: flex;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+.kalkulator, .results {
+padding: 20px;
+}
+.kalkulator {
+background-color: #FFFFFF;
+width: 400px;
+}
+.results {
+background-color: #0A3D4D;
+color: white;
+width: 300px;
+border-bottom-left-radius: 50px;
+}
+.results h2 {
+margin-top: 0;
+}
+.results .wyniki {
+color: #D4E157;
+font-size: 2em;
+}
+.results .total {
+font-size: 1.2em;
+}
+h1 {
+font-size: 1.5em;
+margin-bottom: 20px;
+}
+.clear-all {
+float: right;
+color: #7A8C8D;
+text-decoration: none;
+font-size: 0.9em;
+}
+.labels {
+margin-bottom: 20px;
+}
+.labels label {
+display: block;
+margin-bottom: 5px;
+color: #7A8C8D;
+}
+.labels input[type="text"], .labels input[type="number"] {
+width: calc(100% - 20px);
+padding: 10px;
+border: 1px solid #D1D5DB;
+border-radius: 5px;
+font-size: 1em;
+}
+.labels .inline-inputs {
+display: flex;
+justify-content: space-between;
+}
+.labels .inline-inputs input {
+width: 48%;
+}
+.labels .wybor {
+display: block;
+align-items: center;
+border: solid 1px #F9F9C5;
+padding: 10px;
+border-radius: 5px;
+}
+.wybor1, .wybor2{
+    display: flex;
+    border: 1px solid green;
+}
+.labels .wybor input {
+margin-right: 10px;
+}
+.labels .wybor label {
+margin-right: 20px;
+color: #7A8C8D;
+}
+.przycisk {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #D4E157;
+color: #0A3D4D;
+padding: 10px;
+border: none;
+border-radius: 5px;
+font-size: 1em;
+cursor: pointer;
+width: 100%;
+}
+.przycisk i {
+margin-right: 10px;
+}
+.line1{
+    width: 50%;
+}
+.line2{
+    width: 50%;
+}
+.lines{
+    display: flex;
+}
+.wybor input{
+    border: 1px green solid;
+}
