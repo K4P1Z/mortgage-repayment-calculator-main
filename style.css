@@ -57,14 +57,14 @@ display: block;
 margin-bottom: 5px;
 color: #7A8C8D;
 }
-.labels input[type="text"], .labels input[type="number"] {
+.labels input[type="number"] {
 width: 95%;
-float: right;
 padding: 10px;
 border: 1px solid #D1D5DB;
 border-radius: 5px;
 font-size: 1em;
 }
+
 .labels .inline-inputs {
 display: flex;
 justify-content: space-between;
@@ -79,11 +79,15 @@ border-radius: 5px;
 }
 .wybor1, .wybor2{
     display: flex;
-    border: 1px solid rgb(179, 205, 50);
-    background-color: rgba(255, 255, 0, 0.3);
+    border: 1px solid rgb(0, 0, 0);
+;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 5px;
+}
+input[type="radio"]:checked + label {
+    background-color: rgba(255, 234, 7, 0.509);
+
 }
 .labels .wybor input {
 margin-right: 10px;
@@ -118,7 +122,47 @@ margin-right: 10px;
     display: flex;
 }
 
-.labels i{
+.funt{
     background-color: lightblue;
     padding: 5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #D1D5DB;
+}
+.years{
+    background-color: lightblue;
+    padding: 5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #D1D5DB;
+    margin-left: 150px;
+    font-size: 12px;
+}
+.percent{
+    background-color: lightblue;
+    padding: 5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #D1D5DB;
+    margin-left: 150px;
+    font-size: 12px;
+}
+
+#mortgage-amount{
+    padding-left: 45px;
 }
